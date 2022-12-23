@@ -1,3 +1,7 @@
+:root{
+  --main-color: hsla(240, 100%, 30%, 1.0);
+  --secondary-color: aliceblue;
+}
 *{
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,7 +20,8 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 header, footer{
-  background-color: darksalmon;
+  background-color: var(--main-color);
+  color: lime;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +32,9 @@ header > ul{
 }
 ul > li{
   margin: 0 0.4em;
+}
+a{
+  color: inherit;
 }
 .card{
   width: fit-content;
@@ -42,11 +50,15 @@ ul > li{
   font-weight: bold;
 }
 .main-content{
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-footer{
-  justify-content: space-around;
+button{
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
