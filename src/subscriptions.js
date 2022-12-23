@@ -18,7 +18,7 @@ export default function Card(props) {
         Title : <span className="bold">{props.testimonials.title}</span>
       </p>
       <p>
-        Country : <span className="bold">{props.testimonials.company}</span>
+        Company : <span className="bold">{props.testimonials.company}</span>
       </p>
       <p>
         Price : <span className="bold">{props.testimonials.price}</span>
