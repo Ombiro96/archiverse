@@ -1,16 +1,29 @@
-export default function Card(props){
-    return(
-        <div className="card">
-            <img src={props.image} alt="logo" />
-            <p>id is {props.id}</p>
-            <p>*{props.rating}/5</p>
-            <p>No. of Reviews: {props.reviewCount}</p>
-            <p>Subscripiton package: <span className="bold">{props.subscription}</span></p>
-            <p>Email: <span className="bold">{props.email}</span></p>
-            <p>Contact : <span className="bold">{props.contact}</span></p>
-            <p>Ttile : <span className="bold">{props.title}</span></p>
-            <p>Country : <span className="bold">{props.company}</span></p>
-            <button>Try now</button>
-        </div>
-    )
+export default function Card(props) {
+  return (
+    <div className="card">
+        {props.testimonials.price<29000 && <div className="badge">DISCOUNT 5%</div>}
+      <img src={props.testimonials.src} alt="logo" />
+      <p>Ratings: {props.testimonials.stats.ratings}/5</p>
+      <p>No. of Reviews: {props.testimonials.stats.reviews}</p>
+      <p>
+        Subscripiton package: <span className="bold">{props.testimonials.subscription}</span>
+      </p>
+      <p>
+        Email: <span className="bold">{props.testimonials.email}</span>
+      </p>
+      <p>
+        Contact : <span className="bold">{props.testimonials.contact}</span>
+      </p>
+      <p>
+        Title : <span className="bold">{props.testimonials.title}</span>
+      </p>
+      <p>
+        Country : <span className="bold">{props.testimonials.company}</span>
+      </p>
+      <p>
+        Price : <span className="bold">{props.testimonials.price}</span>
+      </p>
+      <button>Try now</button>
+    </div>
+  );
 }

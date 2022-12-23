@@ -1,64 +1,74 @@
-:root{
-  --main-color: hsla(240, 100%, 30%, 1.0);
+:root {
+  --main-color: hsla(240, 100%, 30%, 1);
   --secondary-color: aliceblue;
 }
-*{
+* {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 body {
   padding: 0;
   margin: 0;
   text-align: center;
 }
-#root{
+#root {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
 }
-header, footer{
+header,
+footer {
   background-color: var(--main-color);
   color: lime;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header > ul{
+header > ul {
   display: flex;
   list-style: none;
 }
-ul > li{
+ul > li {
   margin: 0 0.4em;
 }
-a{
+a {
   color: inherit;
 }
-.card{
+.card {
   width: fit-content;
   /* border: 2px solid green; */
   box-shadow: 0px 0px 10px greenyellow;
   background-color: aliceblue;
+  position: relative;
 }
-.card>img{
+.card > img {
   width: 6em;
   /* border: 2px solid lime; */
 }
-.bold{
+.bold {
   font-weight: bold;
 }
-.main-content{
+.main-content {
   /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px; */
+  grid-template-rows: 1fr 1fr; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-button{
+button {
   background-color: var(--main-color);
   color: var(--secondary-color);
+}
+.badge{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: var(--main-color);
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }

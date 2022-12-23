@@ -7,3 +7,4 @@ Babel is used to translate JSX back to html and regular JS is used in order to g
 The card components are not hard-coded as before by use of props, which means we are able to get data from objects and arrays
 In this case I used the map() function to map the data from the data array to a new one, while selecting every index and implementing codes
 There is a bit of conditional rendering where prices lower that 29000 have a discount mini card shown
+There is also use of bootstrap libraries to create the footer section and utilise use of icons

@@ -3,15 +3,8 @@ import data from './data'
 export default function Main(){
     const testimonials=data.map(function(testimonials){
         return <Card 
-        image={testimonials.src}
-        id= {testimonials.id}
-        rating= {testimonials.stats.ratings}
-        reviewCount= {testimonials.stats.review}
-        subscription={testimonials.subscription}
-        email={testimonials.email}
-        contact={testimonials.contact}
-        title={testimonials.title}
-        company={testimonials.company}
+        key= {testimonials.id}
+        testimonials={testimonials}
         />
     })
     return(
@@ -19,4 +12,4 @@ export default function Main(){
             {testimonials}
         </div>
     )
-}
+} 
