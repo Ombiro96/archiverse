@@ -1,41 +1,49 @@
 const universities = [
   {
-    name: "John Doe",
     university: "Jomo Kenyatta University of Agriculture and Technology",
+    height: 200,
+    width: 200,
     src: "./jkuat.png"
   },
   {
-    name: "Jane Doe",
-    university: "I have never seen anything like this before. It's truly revolutionary.",
-    src: "./jkuat.png"
+    university: "Meru University of Science and Technology.",
+    height: 200,
+    width: 200,
+    src: "./meru-university.png"
   },
   {
-    name: "Bob Smith",
-    university: "This is the best investment I have ever made. I highly recommend it.",
-    src: "./jkuat.png"
+    university: "Machakos University.",
+    height: 200,
+    width: 200,
+    src: "./Machakos_University_Logo.png"
   },
   {
-    name: "Alice Johnson",
-    university: "I am so impressed with the results. I never thought it would be possible.",
-    src: "./jkuat.png"
+    university: "Dedan Kimathi University of Science and Technology.",
+    height: 200,
+    width: 200,
+    src: "./Dedan-Kimathi-University.png"
   },
   {
-    name: "Charlie Brown",
-    university: "This product has exceeded all of my expectations. I am blown away.",
-    src: "./jkuat.png"
+    university: "United States International University Africa.",
+    height: 200,
+    width: 200,
+    src: "./USIU_Africa_Logo.png"
   },
 ];
 
 const Universities = () => {
   return (
-    <div className="universities">
+    <div style={{backgroundImage: "linear-gradient(to right, rgba(28,61,115,1.0), rgba(81,138,101,1.0))"}}>
+      <h1 style={{textAlign: "start", color: "rgba(187,224,80, 1.0)", padding: "0.5em"}}>Participants</h1>
+      <div className="universities">
       {universities.map((university, index) => (
         <div key={index}>
-            <img src={university.src} alt="" />
-          <h3>{university.name}</h3>
-          <p>{university.university}</p>
+            <img src={university.src} alt={university.university}
+            style={{height: university.height + "px", width: university.width + "px"}}/>
+          <h5>{university.university}</h5>
         </div>
       ))}
+    </div>
     </div>
   );
 };

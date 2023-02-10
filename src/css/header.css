@@ -1,0 +1,117 @@
+.hero-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(28,61,115,1.0), rgba(81,138,101,1.0));
+}
+.hero-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 40%;
+    color: aliceblue
+}
+.hero-content-container>h1{
+    margin: 0 0 0.5em 0;
+}
+.hero-content-container>h6{
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+
+
+.hero-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 2em;
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(28,61,115,1.0), rgba(81,138,101,1.0));
+    /* background-color: black; */
+    padding: 0.4em 3em 0.4em 3em; 
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    top: 0;
+    z-index: 1;
+}
+header>a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul>li{
+    margin: 0 0.4em;
+}
+.social-icons{
+    display: flex;
+    color: aliceblue;
+}
+.fab:hover{
+    color: rgba(187,224,80, 1.0);
+}
+
+.hero-image{
+    height: 1.7em;
+    width: 3em;
+}
+.project>ul{
+    display: none;
+    position: absolute;
+    color: aliceblue;
+    background-color: rgb(1, 30, 48);
+    text-align: center;
+  }
+  .project:hover>ul{
+    display: block;
+  }
+  .dropdown-menu{
+    font-size: 1.5em;
+  }
+  .dropdown-menu>li{
+    padding: 0.3em;
+  }
+  .dropdown-menu>li:hover{
+    background-color: rgba(187,224,80, 1.0);
+  }
+  .dropdown-menu>li>a:hover{
+    color: aliceblue;
+  }
+  .hero-image-container>img{
+    /* overflow: scroll; */
+    transform: scaleX(1);
+  }
+  .slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slider>button{
+    height: 2em;
+    width: 2em;
+    background-color: rgba(187,224,80, 1.0);
+    color: black;
+  }
+  .mentors{
+    display: flex;
+  }
+  .italics{
+    font-style: italic;
+  }
+  .bright-color{
+    color: aliceblue;
+  }
